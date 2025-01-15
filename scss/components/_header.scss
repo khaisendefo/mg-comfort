@@ -1,0 +1,81 @@
+.header {
+
+  &__top {
+    &-container {
+      @include flex-all-between;
+      border-bottom: 1px solid var(--science-blue-950);
+      padding: 15px;
+    }
+
+    &-content {
+      @include flex-align-center;
+      gap: 40px;
+    }
+
+    &-information {
+      @include flex-align-center;
+      gap: 40px;
+
+      &-item {
+        @include flex-align-center;
+        gap: 8px;
+
+        & svg path {
+          stroke: var(--science-blue-950);
+        }
+      }
+
+      &-address {
+        & span {
+          font-style: normal;
+        }
+      }
+
+      &-tel {
+        @include flex-align-center;
+      }
+
+      &-email {
+        @include flex-align-center;
+      }
+    }
+
+    &-social {
+      @include flex-align-center;
+      gap: 10px;
+
+      &-icon {
+        min-width: 30px;
+        min-height: 30px;
+        max-width: 30px;
+        max-height: 30px;
+
+        &-telegram rect {
+          fill: var(--science-blue-950);
+        }
+
+        &-whatsapp path {
+          fill: var(--science-blue-950);
+        }
+      }
+    }
+  }
+
+  &__row {
+    &-container {
+      padding: 15px;
+    }
+  }
+
+  &__nav {
+    &-list {
+      @include flex-all-between;
+      gap: 20px;
+    }
+
+    &-link {
+      position: relative;
+      transition: all var(--transition);
+    }
+  }
+}
