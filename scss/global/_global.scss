@@ -29,6 +29,7 @@ html, body {
 
 .hover-link {
   position: relative;
+  transition: color var(--transition);
 
   &::before {
     content: '';
@@ -36,16 +37,43 @@ html, body {
     top: 50%;
     left: -10px;
     z-index: -1;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     border-radius: 50%;
     min-width: 8px;
     min-height: 8px;
     background-color: var(--science-blue-600);
-    transition: all var(--transition);
+    transition: opacity var(--transition), visibility var(--transition);
     transform: translateY(-50%);
   }
 
-  &:hover::before {
-    display: inline-block;
+  & path {
+    transition: stroke var(--transition);
+  }
+
+  &:hover {
+    color: var(--science-blue-600);
+
+    &::before {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    & path {
+      stroke: var(--science-blue-600);
+    }
+
+  }
+
+  &:active {
+    color: var(--science-blue-800);
+
+    &::before {
+      background-color: var(--science-blue-800);
+    }
+
+    & path {
+      stroke: var(--science-blue-800);
+    }
   }
 }

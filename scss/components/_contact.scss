@@ -1,0 +1,28 @@
+.contact {
+  padding: 70px 0;
+
+  &__content {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__map {
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.2);
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 25px;
+  }
+
+  &__item {
+    &-info {
+      @include flex-column;
+      gap: 5px;
+    }
+  }
+}

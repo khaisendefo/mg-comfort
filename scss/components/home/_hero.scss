@@ -1,0 +1,80 @@
+.hero {
+  padding: 15px 0;
+
+  &__card {
+    @include flex-between;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--science-blue-950);
+
+    
+    & img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+    }
+    
+    &-decor {
+      position: absolute;
+      right: -200px;
+      z-index: 1;
+      opacity: 0.5;
+
+      &-two {
+        position: absolute;
+        top: -500px;
+        left: 500px;
+        opacity: 0.5;
+        z-index: 1;
+
+      & img {
+         width: 1000px;
+       }
+      }
+
+      & img {
+        width: 1000px;
+        transform: rotate(-70deg);
+      }
+    }
+
+    &-info {
+      position: relative;
+      z-index: 3;
+      padding: 50px 10px 50px 50px;  
+      max-width: 800px;
+    }
+
+    &-title {
+      margin: 0 0 30px;
+    }
+
+    &-list {
+      display: grid;
+      gap: 25px;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 40px;
+      max-width: 650px;
+    }
+    
+    &-item {
+      @include flex-align-center;
+      gap: 10px;
+
+      & svg {
+        width: 35px;
+        height: 35px;
+
+        & path {
+          fill: var(--science-blue-500);
+        }
+      }
+
+      & span {
+        color: var(--science-blue-50);
+      }
+    }
+  }
+}

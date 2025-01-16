@@ -2,8 +2,37 @@
   &-regular {
     font-weight: 400;
     font-size: 1.1em;
+    line-height: 1.4;
+    font-family: var(--primary-font);
+    color: var(--science-blue-950);
+  }
+
+  &-medium {
+    font-weight: 500;
+    font-size: 1.3em;
     line-height: 1.3;
     font-family: var(--primary-font);
+  }
+}
+
+.title {
+  &-general {
+    text-transform: uppercase;
+    color: var(--science-blue-50);
+    font-size: 2.6em;
+    line-height: 1.4;
+    font-weight: 700;
+
+    & span {
+      color: var(--science-blue-400);
+    }
+  }
+
+  &-section {
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
     color: var(--science-blue-950);
   }
 }

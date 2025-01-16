@@ -72,10 +72,5 @@
       @include flex-all-between;
       gap: 20px;
     }
-
-    &-link {
-      position: relative;
-      transition: all var(--transition);
-    }
   }
 }
