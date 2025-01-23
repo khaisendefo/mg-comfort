@@ -1,0 +1,61 @@
+.footer {
+  background-color: var(--science-blue-950);
+  padding: 30px 0;
+  color: var(--science-blue-50);
+
+  &__top {
+    padding-bottom: 30px;
+  }
+
+  &__row {
+    @include flex-between;
+  }
+
+  &__head {
+    margin-bottom: 30px;
+  }
+
+  &__col {
+    @include flex-column;
+    gap: 30px;
+    color: var(--science-blue-50);
+
+    &-block {
+      @include flex-column;
+      gap: 8px;
+    }
+  }
+
+  &__label {
+    color: var(--science-blue-50);
+  }
+
+  &__link {
+    color: var(--science-blue-50);
+  }
+
+  &__text {
+    color: var(--science-blue-50);
+  }
+
+  &__nav {
+    &-list {
+      @include flex-column;
+      gap: 8px;
+    }
+
+    &-link {
+      color: var(--science-blue-50);
+    }
+  }
+
+  &__button {
+    max-height: 56px;
+  }
+
+  &__bottom {
+    @include flex-all-between;
+    border-top: 1px solid var(--science-blue-50);
+    padding-top: 30px;
+  }
+}

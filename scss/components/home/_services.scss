@@ -16,6 +16,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+
   &__card {
     position: relative;
     display: block;
@@ -24,6 +25,20 @@
     padding: 40px;
     background-color: #fff;
     box-shadow: 0 1px 8px 0 rgba(0,0,0,.1);
+
+    &-one {
+      padding: 60px;
+
+      & .services__card-img {
+        position: absolute;
+        right: 0;
+        bottom: -130px;
+  
+        & img {
+          width: 450px;
+        }
+      }
+    }
 
     &-two {
       & .services__card-description {
@@ -68,13 +83,15 @@
     }
 
     &-four {
+      padding: 60px;
+
       & .services__card-img {
         position: absolute;
         right: 30px;
-        bottom: -140px;
+        bottom: -130px;
   
         & img {
-          width: 450px;
+          width: 400px;
         }
       }
     }

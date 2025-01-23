@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/libs/splide.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>Document</title>
 </head>
@@ -149,9 +150,9 @@
       </section>
       <section class="services">
         <div class="services__container container">
-          <!-- <h2 class="services__title title-section">Услуги</h2> -->
+          <h2 class="services__title title-section">Услуги</h2>
           <div class="services__content">
-            <div class="services__card">
+            <div class="services__card services__card-one">
               <h3 class="services__card-name title-name">Промывка радиатора отопления</h3>
               <p class="services__card-description text-regular">Промывка радиатора отопления для восстановления его эффективности и устранения загрязнений в системе. Процесс включает слив и замену теплоносителя, промывку радиаторов и проверку на протечки.</p>
               <div class="services__card-btn">
@@ -198,7 +199,200 @@
                 <a class="services__card-link button-transperent" href="#">Подробнее</a>
               </div>
               <div class="services__card-img">
-                <img width="300" src="assets/images/services/4.png" alt="">
+                <img width="250" src="assets/images/services/5.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="portfolio__container container">
+          <h2 class="portfolio__title title-section">Галерея работ</h2>
+          <div class="portfolio__slider splide">
+            <nav class="portfolio__slider-nav">
+              <button class="portfolio__slider-nav-arrow portfolio__slider-nav-arrow--prev">
+                <div class="portfolio__slider-nav-wrap">
+                  <svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.25 23.5L2.75 13L13.25 2.5" stroke="#91D041" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>  
+              </button>
+              <button class="portfolio__slider-nav-arrow portfolio__slider-nav-arrow--next">
+                <div class="portfolio__slider-nav-wrap">
+                  <svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.75 2.5L13.25 13L2.75 23.5" stroke="#91D041" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg> 
+                </div>
+              </button>
+            </nav>
+            <div class="portfolio__slider-track splide__track">
+              <ul class="portfolio__grid splide__list">
+                <!-- <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery" href="assets/video/1.mp4">
+                    <img src="assets/images/portfolio/1.jpg" alt="">
+                  </a>
+                </li>
+                <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery" href="assets/video/2.mp4">
+                    <img src="assets/images/portfolio/1.jpg" alt="">
+                  </a>
+                </li>
+                <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery1" href="assets/video/3.mp4">
+                    <img src="assets/images/portfolio/1.jpg" alt="">
+                  </a>
+                </li>
+                <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery1" href="assets/video/4.mp4">
+                    <img src="assets/images/portfolio/1.jpg" alt="">
+                  </a>
+                </li> -->
+                <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery1" href="#">
+                    <img src="assets/images/portfolio/1.jpg" alt="">
+                  </a>
+                </li>
+                <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery1" href="#">
+                    <img src="assets/images/portfolio/2.jpg" alt="">
+                  </a>
+                </li>
+                <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery1" href="#">
+                    <img src="assets/images/portfolio/3.jpg" alt="">
+                  </a>
+                </li>
+                <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery1" href="#">
+                    <img src="assets/images/portfolio/4.jpg" alt="">
+                  </a>
+                </li>
+                <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery1" href="#">
+                    <img src="assets/images/portfolio/5.jpg" alt="">
+                  </a>
+                </li>
+                <li class="portfolio__grid-item splide__slide">
+                  <a class="portfolio__grid-link" data-fslightbox="gallery1" href="#">
+                    <img src="assets/images/portfolio/6.jpeg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews main-section">
+        <div class="reviews__inner">
+          <div class="reviews__container container">
+            <h2 class="reviews__title title-section" data-aos="fade-up">Отзывы наших клиентов</h2>
+            <div class="reviews__slider splide">
+              <nav class="reviews__slider-nav">
+                <button class="reviews__slider-nav-arrow reviews__slider-nav-arrow--prev">
+                  <div class="reviews__slider-nav-wrap">
+                    <svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.25 23.5L2.75 13L13.25 2.5" stroke="#91D041" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>  
+                </button>
+                <button class="reviews__slider-nav-arrow reviews__slider-nav-arrow--next">
+                  <div class="reviews__slider-nav-wrap">
+                    <svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.75 2.5L13.25 13L2.75 23.5" stroke="#91D041" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                  </div>
+                </button>
+              </nav>
+              <div class="reviews__slider-track splide__track">
+                <ul class="reviews__slider-list splide__list">
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Ирек</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/images/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">7 октября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description text-small">Всё отлично.
+                        Промыли систему отопления, сам котёл с химией и бак косвенного нагрева. Видно человек с опытом и делает это не первый раз, всё уже отработано.
+                        После промывки котел работает как надо и на минимальной температуре.</p>
+                    </div>
+                  </li>
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Рамиль</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/images/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">14 октября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description text-small">Списались на предмет промывки системы отопления в частном доме, приехал в назначенный день, я объяснил ситуацию в чем были мои подозрения не греющих радиаторов, Денис решил начать с общей диагностики котла, в итоге проблема была в забитом фильтре, а не в радиаторах. Ремонт обошелся гораздо дешевле чем рассчитывал) дал рекомендации по дальнейшей эксплуатации газового котла👍</p>
+                    </div>
+                  </li>
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Альфия</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/images/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">6 октября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description text-small">Спасибо Денису .Профессионал своего дела! Поэтому рекомендую обратиться к нему, не пожалеете, всё сделает качественно, чётко!</p>
+                    </div>
+                  </li>
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Наталья</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/images/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">4 октября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description text-small">Была проблема с котлом, плохо грел воду и отопление. Приехал Денис и все качественно сделал, промыл и продул всю систему. Теперь работает всё на ура☺️ спасибо, Вы профессионал своего дела👍🏽</p>
+                    </div>
+                  </li>
+                  <li class="reviews__slider-slide splide__slide">
+                    <div class="reviews__slider-head">
+                      <div class="reviews__slider-avatar">
+                        <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/>
+                        </svg>
+                        </div>
+                      <h3 class="reviews__slider-name">Гадель</h3>
+                    </div>
+                    <div class="reviews__slider-row">
+                      <img src="assets/images/stars.svg" alt="5 звезд">
+                      <div class="reviews__slider-date">24 сентября 2024</div>
+                    </div>
+                    <div class="reviews__slider-content">
+                      <p class="reviews__slider-description text-small">Была проблема с засором водопроводной трубы в частном доме. Позвонил мастеру Денису. Он попросил описать схему водоснабжения и прислать фотографии водопроводного узла. Изучив фотографии Денис указал проблемные места в которых может быть засор. Так оно и оказалось. Проблему решили просто по телефону. Повезло с мастером Денисом! А с другими мог бы попасть на большие расходы. Огромное Спасибо!</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -263,23 +457,79 @@
           </div>
         </div>
       </section>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
     </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__head">
+            <a class="header__logo logo" href="#">
+              <img width="200" src="assets/images/logo-1.png" alt="">
+            </a>
+          </div>
+          <div class="footer__row">
+            <div class="footer__col">
+              <div class="footer__col-block">
+                <span class="footer__label text-regular">Телефон:</span>
+                <a class="footer__link text-small hover-link" href="#">+7 917 927-48-29</a>
+                <a class="footer__link text-small hover-link" href="#">+7 (917) 249-76-57</a>
+              </div>
+              <div class="footer__col-block">
+                <span class="footer__label text-regular">E-mail:</span>
+                <a class="footer__link text-small hover-link" href="#">mg-comfort@bk.ru</a>
+              </div>
+            </div>
+            <div class="footer__col">
+              <div class="footer__col-block">
+                <span class="footer__label text-regular">Время работы:</span>
+                <p class="footer__text text-small">9.00-17.00, <br> Суббота-воскресенье — выходной</p>
+              </div>
+              <div class="footer__col-block">
+                <span class="footer__label text-regular">Адрес:</span>
+                <p class="footer__text text-small">420012 г.Казань, ул.Маяковского, 24</p>
+              </div>
+            </div>
+            <div class="footer__col">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link text-regular hover-link" href="#">Главная</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link text-regular hover-link" href="#">Услуги</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link text-regular hover-link" href="#">О компании</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link text-regular hover-link" href="#">Обсуживание оборудования</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link text-regular hover-link" href="#">Монтакж систем отопления</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link text-regular hover-link" href="#">Системы очистки воды</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link text-regular hover-link" href="#">Инструкции</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a class="footer__nav-link text-regular hover-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <button class="footer__button button">Оставить заявку</button>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__text text-regular">© 2002-2023 «AQUABRAND»</div>
+          <div class="footer__text text-regular hover-link"><a href="">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </footer>
   </div>
+  <script src="assets/libs/index.js"></script>
+  <script src="assets/libs/splide.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
