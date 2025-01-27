@@ -9,6 +9,15 @@
 
   &__row {
     @include flex-between;
+    gap: 15px;
+
+    @include breakpoint-1000 {
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint-700 {
+      gap: 30px;
+    }
   }
 
   &__head {

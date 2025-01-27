@@ -1,0 +1,45 @@
+.header-burger {
+  position: relative;
+  display: none;
+  padding: 12px 0;
+  background: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  @include breakpoint-1200 {
+    display: inline-block;
+    order: 3;
+  }
+
+  span {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 30px;
+    width: 20px;
+    height: 2px;
+    background: var(--science-blue-950);
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 30px;
+      width: 25px;
+      height: 2px;
+      background: var(--science-blue-950);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+}

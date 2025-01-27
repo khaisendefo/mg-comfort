@@ -1,6 +1,4 @@
 .services {
-  padding: 70px 0;
-
   &__title {
     margin-bottom: 30px;
   }
@@ -8,12 +6,20 @@
   &__content {
     @include flex-column;
     gap: 25px;
+
+    @include breakpoint-600 {
+      gap: 15px;
+    }
   }
 
   &__row {
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(2, 1fr);
+
+    @include breakpoint-1200 {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
 
@@ -26,16 +32,57 @@
     background-color: #fff;
     box-shadow: 0 1px 8px 0 rgba(0,0,0,.1);
 
+    @include breakpoint-500 {
+      padding: 35px 25px !important;
+    }
+
+    &-img {
+      @include breakpoint-800 {
+        opacity: 0.5;
+      }
+
+      @include breakpoint-700 {
+        display: none;
+      }
+    }
+
     &-one {
       padding: 60px;
+
+      @include breakpoint-1200 {
+        padding: 40px;
+      }
 
       & .services__card-img {
         position: absolute;
         right: 0;
         bottom: -130px;
+
+        @include breakpoint-1200 {
+          right: -50px;
+          bottom: -100px;
+        }
+
+        @include breakpoint-900 {
+          right: -100px;
+        }
   
         & img {
           width: 450px;
+
+          @include breakpoint-1200 {
+            width: 400px;
+          }
+
+          @include breakpoint-900 {
+            width: 350px;
+          }
+        }
+      }
+
+      & .services__card-description {
+        @include breakpoint-1200 {
+          max-width: 450px;
         }
       }
     }
@@ -49,15 +96,31 @@
         position: absolute;
         right: -100px;
         bottom: -50px;
+
+        @include breakpoint-1200 {
+          right: -50px;
+        }
+
+        @include breakpoint-900 {
+          right: -80px;
+        }
   
         & img {
           width: 440px;
+
+          @include breakpoint-900 {
+            width: 380px;
+          }
         }
       }
 
       & .services__card-btn {
         flex-direction: column;
         align-items: start;
+
+        @include breakpoint-1200 {
+          flex-direction: row;
+        }
       }
     }
 
@@ -70,54 +133,124 @@
         position: absolute;
         right: -80px;
         bottom: -140px;
+
+        @include breakpoint-1300 {
+          right: -100px;
+        }
+
+        @include breakpoint-1200 {
+          right: -50px;
+        }
+
+        @include breakpoint-1000 {
+          right: -80px;
+        }
+
+        @include breakpoint-900 {
+          right: -100px;
+        }
   
         & img {
           width: 450px;
+
+          @include breakpoint-900 {
+            width: 400px;
+          }
         }
       }
 
       & .services__card-btn {
         flex-direction: column;
         align-items: start;
+
+        @include breakpoint-1200 {
+          flex-direction: row;
+        }
       }
     }
 
     &-four {
       padding: 60px;
 
+      @include breakpoint-1200 {
+        padding: 40px;
+      }
+
       & .services__card-img {
         position: absolute;
         right: 30px;
         bottom: -130px;
+
+        @include breakpoint-1200 {
+          right: -10px;
+          bottom: -130px;
+        }
+
+        @include breakpoint-900 {
+          right: -50px;
+          bottom: -100px;
+        }
   
         & img {
           width: 400px;
+
+          @include breakpoint-1200 {
+            width: 350px;
+          }
+
+          @include breakpoint-900 {
+            width: 300px;
+          }
+        }
+      }
+       
+      & .services__card-description {
+        @include breakpoint-1200 {
+          max-width: 430px;
         }
       }
     }
 
     &-name {
+      position: relative;
+      z-index: 2;
       margin-bottom: 10px;
     }
 
     &-description {
+      position: relative;
+      z-index: 2;
       margin-bottom: 35px;
       max-width: 700px;
     }
 
     &-btn {
+      position: relative;
+      z-index: 2;
       @include flex-align-center;
       gap: 15px;
+
+      @include breakpoint-600 {
+        flex-direction: column;
+      }
     }
 
     &-button {
       width: 210px;
       font-size: 1em;
+
+      @include breakpoint-600 {
+        width: 100%;
+      }
     }
 
     &-link {
       width: 210px;
       font-size: 1em;
+
+      @include breakpoint-600 {
+        width: 100%;
+      }
     }
 
     &-img {

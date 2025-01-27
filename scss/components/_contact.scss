@@ -1,13 +1,41 @@
 .contact {
-  padding: 70px 0;
-
   &__content {
     display: flex;
     gap: 30px;
+
+    @include breakpoint-700 {
+      flex-direction: column;
+    }
   }
 
   &__map {
     box-shadow: 0 1px 8px 0 rgba(0,0,0,.2);
+
+    @include breakpoint-700 {
+      order: 2;
+    }
+
+    & iframe {
+      @include breakpoint-1200 {
+        width: 600px;
+      }
+
+      @include breakpoint-1000 {
+        width: 500px;
+      }
+
+      @include breakpoint-800 {
+        width: 400px;
+      }
+
+      @include breakpoint-700 {
+        width: 100%;
+      }
+
+      @include breakpoint-500 {
+        height: 350px;
+      }
+    }
   }
 
   &__title {

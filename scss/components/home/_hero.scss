@@ -1,6 +1,12 @@
 .hero {
   padding: 15px 0;
 
+  @include breakpoint-600 {
+    position: relative;
+    background-color: var(--science-blue-950);
+    overflow: hidden;
+  }
+
   &__card {
     @include flex-between;
     position: relative;
@@ -8,12 +14,40 @@
     border-radius: 10px;
     background-color: var(--science-blue-950);
 
+    @include breakpoint-600 {
+      position: static;
+    }
+
     
-    & img {
+    &-image {
       position: absolute;
       top: 0;
       right: 0;
       z-index: 2;
+
+      @include breakpoint-1300 {
+        right: -50px;
+      }
+
+      @include breakpoint-1200 {
+        right: -100px;
+      }
+
+      @include breakpoint-1100 {
+        opacity: 0.3;
+      }
+
+      @include breakpoint-900 {
+        right: -150px;
+      }
+
+      @include breakpoint-800 {
+        right: -250px;
+      }
+
+      @include breakpoint-700 {
+        height: 100%;
+      }
     }
     
     &-decor {
@@ -21,6 +55,10 @@
       right: -200px;
       z-index: 1;
       opacity: 0.5;
+
+      @include breakpoint-800 {
+        right: -400px;
+      }
 
       &-two {
         position: absolute;
@@ -45,10 +83,22 @@
       z-index: 3;
       padding: 50px 10px 50px 50px;  
       max-width: 800px;
+
+      @include breakpoint-800 {
+        padding: 40px 30px;
+      }
+
+      @include breakpoint-600 {
+        padding: 30px 0;
+      }
     }
 
     &-title {
       margin: 0 0 30px;
+
+      @include breakpoint-1000 {
+        margin: 0 0 24px;
+      }
     }
 
     &-list {
@@ -57,15 +107,36 @@
       grid-template-columns: repeat(2, 1fr);
       margin-bottom: 40px;
       max-width: 650px;
+
+      @include breakpoint-1200 {
+        gap: 18px;
+      }
+
+      @include breakpoint-1000 {
+        max-width: 600px;
+      }
+
+      @include breakpoint-800 {
+        grid-template-columns: repeat(1, 1fr)
+      }
     }
     
     &-item {
       @include flex-align-center;
       gap: 10px;
 
+      @include breakpoint-800 {
+        gap: 6px;
+      }
+
       & svg {
         width: 35px;
         height: 35px;
+
+        @include breakpoint-800 {
+          width: 25px;
+          height: 25px;
+        }
 
         & path {
           fill: var(--science-blue-500);

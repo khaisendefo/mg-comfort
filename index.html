@@ -62,6 +62,9 @@
                     </li>
                   </ul>
                 </div>
+                <button class="header-burger">
+                  <span></span>
+                </button>
               </div>
             </div>
             <div class="header__row">
@@ -100,6 +103,90 @@
         </div>
       </div>
     </header>
+    <div class="mobile-menu__overlay"></div>
+    <div class="mobile-menu">
+      <div class="mobile-menu__inner">
+        <div class="mobile-menu__head">
+          <a class="mobile-menu__logo logo" href="#">
+            <img width="200" src="assets/images/logo-1.png" alt="">
+          </a>
+          <button class="mobile-menu__close">
+            <svg role="presentation" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg>
+          </button>
+        </div>
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__nav-list">
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link text-medium" href="#">Главная</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link text-medium" href="#">Услуги</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link text-medium" href="#">О компании</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link text-medium" href="#">Обсуживание оборудования</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link text-medium" href="#">Монтакж систем отопления</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link text-medium" href="#">Системы очистки воды</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link text-medium" href="#">Инструкции</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a class="mobile-menu__nav-link text-medium" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__information">
+          <address class="mobile-menu__information-address">
+            <svg class="mobile-menu__information-address-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5599 20.8207C12.2247 21.0598 11.7753 21.0598 11.4401 20.8207C6.61138 17.3773 1.48557 10.2971 6.6667 5.18128C8.08118 3.78463 9.99963 3 12 3C14.0004 3 15.9188 3.78463 17.3333 5.18128C22.5144 10.2971 17.3886 17.3773 12.5599 20.8207Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                                  
+            <span class="mobile-menu__information-address-text text-regular">г.Казань, ул.Пушкина 99/2</span>
+          </address>
+          <a class="mobile-menu__information-tel" href="tel:+7 917 927-48-29">
+            <svg class="mobile-menu__information-tel-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.6002 14.5215C13.2052 17.0421 7.09606 10.9878 9.50019 8.45753C10.9681 6.91263 9.30988 5.14707 8.39205 3.84934C6.66948 1.41378 2.88796 4.77641 3.0028 6.91544C3.36497 13.6609 10.6618 21.6546 17.7278 20.9574C19.9383 20.7393 22.4781 16.7471 19.9426 15.2882C18.6747 14.5587 16.9345 13.1172 15.6002 14.5215Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 3C15.8565 3 17.637 3.7375 18.9497 5.05025C20.2625 6.36301 21 8.14348 21 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 7C14.7956 7 15.5587 7.31607 16.1213 7.87868C16.6839 8.44129 17 9.20435 17 10" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>               
+            <span class="mobile-menu__information-tel-number text-regular">+7 917 927-48-29</span>
+          </a>
+          <a class="mobile-menu__information-email" href="mailto:mg-comfort@bk.ru">
+            <svg class="mobile-menu__information-email-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z" stroke="#DFDFEC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17 9L13.87 11.5C12.84 12.32 11.15 12.32 10.12 11.5L7 9" stroke="#DFDFEC" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                    
+            <span class="mobile-menu__information-email-address text-regular">mg-comfort@bk.ru</span>
+          </a>
+        </div>
+        <ul class="mobile-menu__social">
+          <li class="mobile-menu__social-item">
+            <a class="mobile-menu__social-link" href="#">
+              <svg class="header__top-social-icon header__top-social-icon-telegram" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none"> 
+                <rect width="8" height="8" rx="4" fill="white"/> <rect width="8" height="8" rx="4" fill="#4A4A4A"/> 
+                <path d="M1.79789 3.91183C2.96111 3.39438 3.73677 3.05324 4.12488 2.88843C5.23299 2.41783 5.46325 2.33609 5.61333 2.33336C5.64633 2.3328 5.72014 2.34115 5.76795 2.38076C5.80831 2.4142 5.81942 2.45938 5.82473 2.49109C5.83005 2.52279 5.83667 2.59503 5.83141 2.65147C5.77136 3.29567 5.51153 4.85898 5.37934 5.5805C5.32341 5.8858 5.21327 5.98817 5.10665 5.99818C4.87493 6.01996 4.69897 5.84183 4.47454 5.69162C4.12336 5.45658 3.92496 5.31026 3.58407 5.0809C3.19011 4.81583 3.4455 4.67014 3.67001 4.43205C3.72877 4.36974 4.74972 3.42159 4.76948 3.33558C4.77195 3.32482 4.77425 3.28472 4.75092 3.26355C4.72758 3.24238 4.69315 3.24962 4.6683 3.25538C4.63308 3.26354 4.07205 3.64215 2.98522 4.39121C2.82597 4.50286 2.68174 4.55726 2.5525 4.55441C2.41003 4.55127 2.13598 4.47216 1.93224 4.40454C1.68236 4.32161 1.48376 4.27776 1.50105 4.13691C1.51006 4.06355 1.60901 3.98852 1.79789 3.91183Z" fill="white"/> 
+              </svg>              
+            </a>
+            <a class="mobile-menu__social-link" href="#">
+              <svg class="header__top-social-icon header__top-social-icon-whatsapp" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 8 8" fill="none"> 
+                <rect width="8" height="8" rx="4" fill="#4A4A4A"/> 
+                <path d="M5.79178 2.20192C5.36295 1.76047 4.77016 1.52083 4.16475 1.52083C2.87827 1.52083 1.84403 2.56768 1.85665 3.84155C1.85665 4.24516 1.97016 4.63615 2.15935 4.9893L1.83142 6.1875L3.05484 5.87219C3.39538 6.06137 3.77376 6.14966 4.15214 6.14966C5.42602 6.14966 6.46025 5.10282 6.46025 3.82894C6.46025 3.21092 6.22061 2.63074 5.79178 2.20192ZM4.16475 5.75867C3.82421 5.75867 3.48367 5.67038 3.19358 5.49381L3.11791 5.45597L2.38638 5.64516L2.57557 4.92624L2.52511 4.85056C1.97016 3.95507 2.23502 2.76948 3.14313 2.21453C4.05124 1.65957 5.22421 1.92444 5.77917 2.83255C6.33412 3.74065 6.06926 4.91363 5.16115 5.46858C4.87106 5.65777 4.51791 5.75867 4.16475 5.75867ZM5.27466 4.35867L5.13593 4.29561C5.13593 4.29561 4.93412 4.20732 4.808 4.14426C4.79538 4.14426 4.78277 4.13164 4.77016 4.13164C4.73232 4.13164 4.7071 4.14426 4.68187 4.15687C4.68187 4.15687 4.66926 4.16948 4.49268 4.37128C4.48007 4.39651 4.45484 4.40912 4.42962 4.40912H4.41701C4.40439 4.40912 4.37917 4.39651 4.36656 4.3839L4.30349 4.35867C4.16475 4.29561 4.03863 4.21993 3.93773 4.11903C3.9125 4.09381 3.87466 4.06858 3.84944 4.04336C3.76115 3.95507 3.67286 3.85417 3.6098 3.74065L3.59719 3.71543C3.58457 3.70282 3.58457 3.6902 3.57196 3.66498C3.57196 3.63975 3.57196 3.61453 3.58457 3.60192C3.58457 3.60192 3.63502 3.53885 3.67286 3.50101C3.69809 3.47579 3.7107 3.43795 3.73593 3.41273C3.76115 3.37489 3.77376 3.32444 3.76115 3.2866C3.74854 3.22354 3.59719 2.883 3.55935 2.80732C3.53412 2.76948 3.5089 2.75687 3.47106 2.74426H3.43322C3.408 2.74426 3.37016 2.74426 3.33232 2.74426C3.3071 2.74426 3.28187 2.75687 3.25665 2.75687L3.24403 2.76948C3.21881 2.7821 3.19358 2.80732 3.16836 2.81993C3.14313 2.84516 3.13052 2.87038 3.10529 2.89561C3.01701 3.00912 2.96656 3.14786 2.96656 3.2866C2.96656 3.3875 2.99178 3.4884 3.02962 3.57669L3.04223 3.61453C3.15575 3.85417 3.3071 4.06858 3.5089 4.25777L3.55935 4.30822C3.59719 4.34606 3.63502 4.37128 3.66025 4.40912C3.92511 4.63615 4.22782 4.80011 4.56836 4.8884C4.6062 4.90101 4.65665 4.90101 4.69448 4.91363C4.73232 4.91363 4.78277 4.91363 4.82061 4.91363C4.88367 4.91363 4.95935 4.8884 5.0098 4.86318C5.04764 4.83795 5.07286 4.83795 5.09809 4.81273L5.12331 4.7875C5.14854 4.76228 5.17376 4.74966 5.19899 4.72444C5.22421 4.69921 5.24944 4.67399 5.26205 4.64876C5.28728 4.59831 5.29989 4.53525 5.3125 4.47219C5.3125 4.44696 5.3125 4.40912 5.3125 4.3839C5.3125 4.3839 5.29989 4.37128 5.27466 4.35867Z" fill="white"/> 
+              </svg>                   
+            </a>
+          </li>
+        </ul>
+        <button class="mobile-menu__button button button-brown open-modal" type="button">
+          Оставить заявку               
+        </button>
+      </div>
+    </div>
     <main class="main">
       <section class="hero">
         <div class="hero__container container">
@@ -144,13 +231,13 @@
               </ul>
               <button class="hero__card-button button">Оставить заявку</button>
             </div>
-            <img width="500" src="assets/images/8uvasaywg9gq8wi1hgnd250lm8plkji4.png" alt="">
+            <img class="hero__card-image" width="500" src="assets/images/8uvasaywg9gq8wi1hgnd250lm8plkji4.png" alt="">
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services main-section">
         <div class="services__container container">
-          <h2 class="services__title title-section">Услуги</h2>
+          <!-- <h2 class="services__title title-section">Услуги</h2> -->
           <div class="services__content">
             <div class="services__card services__card-one">
               <h3 class="services__card-name title-name">Промывка радиатора отопления</h3>
@@ -205,7 +292,7 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio main-section">
         <div class="portfolio__container container">
           <h2 class="portfolio__title title-section">Галерея работ</h2>
           <div class="portfolio__slider splide">
@@ -418,7 +505,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact main-section">
         <div class="contact__container container">
           <div class="contact__content">
             <div class="contact__map">
@@ -528,7 +615,7 @@
       </div>
     </footer>
   </div>
-  <script src="assets/libs/index.js"></script>
+  <!-- <script src="assets/libs/index.js"></script> -->
   <script src="assets/libs/splide.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

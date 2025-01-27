@@ -1,6 +1,4 @@
 .portfolio {
-  padding: 70px 0;
-
   &__title {
     margin-bottom: 15px;
     text-align: center;
@@ -60,6 +58,18 @@
       position: relative;
       overflow: hidden;
       box-shadow: 0 1px 8px 0 rgba(0,0,0,.10);
+
+      @include breakpoint-700 {
+        height: 350px;
+      }
+
+      @include breakpoint-600 {
+        height: 300px;
+      }
+
+      @include breakpoint-500 {
+        height: 260px;
+      }
 
       & img {
         position: absolute;

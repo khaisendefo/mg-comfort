@@ -1,15 +1,38 @@
 .header {
+  @include breakpoint-1200 {
+    height: 66px;
+  }
 
+  &__fixed {
+    background-color: var(--science-blue-50);
+
+    @include breakpoint-1200 {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 99;
+      width: 100%;
+      box-shadow: 0 1px 8px 0 rgba(0,0,0,.1);
+    }
+  }
   &__top {
     &-container {
       @include flex-all-between;
       border-bottom: 1px solid var(--science-blue-950);
       padding: 15px;
+
+      @include breakpoint-1200 {
+        border-bottom: none;
+      }
     }
 
     &-content {
       @include flex-align-center;
       gap: 40px;
+
+      @include breakpoint-1200 {
+        display: none;
+      }
     }
 
     &-information {
@@ -64,10 +87,19 @@
   &__row {
     &-container {
       padding: 15px;
+
+      @include breakpoint-1200 {
+        padding: 0;
+      }
     }
   }
 
   &__nav {
+
+    @include breakpoint-1200 {
+      display: none;
+    }
+
     &-list {
       @include flex-all-between;
       gap: 20px;

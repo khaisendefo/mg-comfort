@@ -8,6 +8,17 @@
   color: var(--science-blue-50);
   transition: background-color var(--transition);
 
+  @include breakpoint-1000 {
+    padding: 15px 0;
+    width: 230px;
+    font-size: 1.1em;
+  }
+
+  @include breakpoint-600 {
+    width: 200px;
+    padding: 13px 0;
+  }
+
   &:hover {
     background-color: var(--science-blue-600);
   }
@@ -26,6 +37,17 @@
     border: 1px solid var(--science-blue-700);
     color: var(--science-blue-700);
     transition: background-color var(--transition), color var(--transition);
+
+    @include breakpoint-1000 {
+      padding: 15px 0;
+      width: 230px;
+      font-size: 1.1em;
+    }
+  
+    @include breakpoint-600 {
+      width: 200px;
+      padding: 13px 0;
+    }
 
     &:hover {
       color: var(--science-blue-50);
