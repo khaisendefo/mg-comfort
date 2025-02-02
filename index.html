@@ -3,9 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/libs/splide.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <title>Document</title>
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+    
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="">
+    
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <link rel="canonical" href="">
+    <link rel="stylesheet" href="assets/libs/splide.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body class="body">
   <div class="wrapper">
@@ -229,7 +244,7 @@
                   <span class="text-medium">Гарантия качества работы</span>
                 </li>
               </ul>
-              <button class="hero__card-button button">Оставить заявку</button>
+              <button class="hero__card-button button modal-open">Оставить заявку</button>
             </div>
             <img class="hero__card-image" width="500" src="assets/images/8uvasaywg9gq8wi1hgnd250lm8plkji4.png" alt="">
           </div>
@@ -243,7 +258,7 @@
               <h3 class="services__card-name title-name">Промывка радиатора отопления</h3>
               <p class="services__card-description text-regular">Промывка радиатора отопления для восстановления его эффективности и устранения загрязнений в системе. Процесс включает слив и замену теплоносителя, промывку радиаторов и проверку на протечки.</p>
               <div class="services__card-btn">
-                <button class="services__card-button button">Оставить заявку</button>
+                <button class="services__card-button button modal-open">Оставить заявку</button>
                 <a class="services__card-link button-transperent" href="#">Подробнее</a>
               </div>
               <div class="services__card-img">
@@ -256,7 +271,7 @@
                   <h3 class="services__card-name title-name">Химическая промывка котла</h3>
                   <p class="services__card-description text-regular">Применение химической промывки для восстановления эффективности котла, устранения загрязнений и увеличения срока службы оборудования.</p>
                   <div class="services__card-btn">
-                    <button class="services__card-button button">Оставить заявку</button>
+                    <button class="services__card-button button modal-open">Оставить заявку</button>
                     <a class="services__card-link button-transperent" href="#">Подробнее</a>
                   </div>
                 </div>
@@ -269,7 +284,7 @@
                   <h3 class="services__card-name title-name">Промывка и дезинфекция бойлера</h3>
                   <p class="services__card-description text-regular">Очистка и дезинфекция бойлера для удаления накипи и загрязнений, улучшения качества воды и восстановления работы устройства.</p>
                   <div class="services__card-btn">
-                    <button class="services__card-button button">Оставить заявку</button>
+                    <button class="services__card-button button modal-open">Оставить заявку</button>
                     <a class="services__card-link button-transperent" href="#">Подробнее</a>
                   </div>
                 </div>
@@ -282,7 +297,7 @@
               <h3 class="services__card-name title-name">Промывка теплого пола</h3>
               <p class="services__card-description text-regular">Промывка теплого пола для восстановления теплоотдачи и предотвращения засорения труб. Регулярное обслуживание помогает поддерживать эффективность системы и продлевает срок службы.</p>
               <div class="services__card-btn">
-                <button class="services__card-button button">Оставить заявку</button>
+                <button class="services__card-button button modal-open">Оставить заявку</button>
                 <a class="services__card-link button-transperent" href="#">Подробнее</a>
               </div>
               <div class="services__card-img">
@@ -605,7 +620,7 @@
                 </ul>
               </nav>
             </div>
-            <button class="footer__button button">Оставить заявку</button>
+            <button class="footer__button button modal-open">Оставить заявку</button>
           </div>
         </div>
         <div class="footer__bottom">
@@ -614,8 +629,36 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal active">
+        <div class="modal__overlay">
+          <div class="modal__inner">
+            <div class="modal__window">
+              <div class="modal__title">Оставьте заявку</div>
+              <button class="modal__close">
+                <svg role="presentation" class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd"><rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect><rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect></g></svg>
+              </button>
+              <form class="modal__form form" action="send.php" method="POST">
+                <input class="modal__form-input form-input" name="Имя" type="text" placeholder="Ваше имя" required="">
+                <input class="modal__form-input form-input" name="Телефон" type="tel" placeholder="Ваш телефон" required="" inputmode="text">
+                <textarea class="modal__form-textarea form-textarea" name="Сообщение" id="" placeholder="Сообщение"></textarea>
+                <div class="modal__form-confirmation form-confirmation">
+                  <input class="modal__form-confirmation-checkbox form-checkbox" type="checkbox" required="">
+                  <p class="modal__form-confirmation-description text-description-small">
+                    Я даю согласие на <a class="privacy-open" href="#">обработку персональных данных</a>
+                  </p>
+                </div>
+                <button class="modal__form-button button" type="submit">Оставить заявку</button>
+                <input type="hidden" class="form-purpose" value="Заявка с сайта">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- <script src="assets/libs/index.js"></script> -->
+  <script src="assets/libs/axios.min.js"></script>
+  <script src="assets/libs/inputmask.min.js"></script>
   <script src="assets/libs/splide.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

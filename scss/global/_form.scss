@@ -1,0 +1,48 @@
+.form {
+  @include flex-column;
+  gap: 15px;
+  
+  &-textarea,
+  &-input {
+    border: 1px solid var(--science-blue-950);
+    background-color: var(--science-blue-50);
+    padding: 22px;
+    border-radius: 15px;
+    transition: all var(--transition);
+    font-weight: 500;
+    color: var(--dark-color);
+    font-size: 1em;
+
+    &::placeholder {
+      font-size: 1em;
+      color: var(--dark-color);
+      font-weight: 400;
+    }
+
+    &:focus {
+      border: 1px solid var(--science-blue-950);
+    }
+  }
+
+  &-textarea {
+    resize: none;
+  }
+  
+  &-confirmation {
+    display: flex;
+    align-items: start; 
+    gap: 10px;
+
+    & a {
+      color: var(--science-blue-600);
+      background-color: transparent;
+    }
+  }
+
+  &-checkbox {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transition: all var(--transition);
+  }
+}

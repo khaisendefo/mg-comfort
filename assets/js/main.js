@@ -1,3 +1,4 @@
+// gallery slider
 const gallerySlider = () => {
   const sliderElement = document.querySelector('.portfolio__slider');
   if (!sliderElement) return; // Проверяем, есть ли элемент слайдера
@@ -51,9 +52,9 @@ const gallerySlider = () => {
     updateArrowState(); // Обновляем состояние кнопок при инициализации
   }
 };
-
 gallerySlider();
 
+// reviews slider
 const reviewsSlider = () => {
   const sliderElement = document.querySelector('.reviews__slider');
   if (!sliderElement) return; // Проверяем, есть ли элемент слайдера
@@ -105,9 +106,9 @@ const reviewsSlider = () => {
     updateArrowState(); // Обновляем состояние кнопок при инициализации
   }
 };
-
 reviewsSlider();
 
+// burger
 const toggleMenu = () => {
   document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.querySelector('.header-burger');
@@ -154,5 +155,99 @@ const toggleMenu = () => {
     });
   });
 };
-
 toggleMenu();
+
+// input mask
+let inputs = document.querySelectorAll('input[type="tel"]');
+let im = new Inputmask('+7(999) 999-99-99');
+im.mask(inputs);
+
+// modal
+const toggleModal = () => {
+  document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.querySelector('.modal'); 
+    const body = document.body; 
+    const modalOpenButtons = document.querySelectorAll('.modal-open'); 
+    const modalCloseButton = document.querySelector('.modal__close'); 
+    const modalOverlay = modal.querySelector('.modal__overlay'); 
+
+    function openModal() {
+      modal.classList.add('active');
+      body.classList.add('body-no-scroll'); 
+    }
+
+    function closeModal() {
+      modal.classList.remove('active');
+      body.classList.remove('body-no-scroll'); 
+    }
+
+    modalOpenButtons.forEach(button => {
+      button.addEventListener('click', openModal);
+    });
+
+    modalCloseButton.addEventListener('click', closeModal);
+
+    modalOverlay.addEventListener('click', (event) => {
+      const modalWindow = modal.querySelector('.modal__window');
+      if (!modalWindow.contains(event.target)) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+  });
+};
+toggleModal();
+
+// send form 
+const sendFormTelegram = () => {
+  document.addEventListener('DOMContentLoaded', function () {
+    const forms = document.querySelectorAll('.form');
+
+    forms.forEach(form => {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = form.querySelector('[name="Имя"]')?.value.trim();
+        const phone = form.querySelector('[name="Телефон"]')?.value.trim();
+        const messageContent = form.querySelector('[name="Сообщение"]')?.value.trim() || 'Без сообщения';
+        const consent = form.querySelector('.form-checkbox')?.checked;
+        const purpose = form.querySelector('.form-purpose')?.value || 'Не указано';
+
+        if (!name || !phone || !consent) {
+          alert("Пожалуйста, заполните все обязательные поля.");
+          return;
+        }
+
+        fetch('send.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name,
+            phone,
+            message: messageContent,
+            purpose
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          if (data.ok) {
+            alert('Ваша заявка успешно отправлена!');
+            form.reset();
+          } else {
+            alert('Ошибка при отправке заявки.');
+          }
+        })
+        .catch(error => {
+          console.error('Ошибка сети:', error);
+          alert('Ошибка соединения. Попробуйте позже.');
+        });
+      });
+    });
+  });
+};
+sendFormTelegram();

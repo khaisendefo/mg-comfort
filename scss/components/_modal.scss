@@ -1,0 +1,114 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  &, &__overlay {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__overlay {
+    background-color: rgba(0, 0, 0, 0.759);
+  }
+
+  &__inner {
+    @include flex-all-center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    padding: 30px;
+  }
+
+  &__window {
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    background-color: var(--science-blue-50);
+    animation: modal .5s ease-in-out;
+
+    @include breakpoint-tablet {
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 15px;
+    }
+  }
+
+  @keyframes modal {
+    0% {
+      opacity: 0.3;
+      transform: translateY(150px) scale(0.7);
+    }
+  }
+
+  &__title {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include breakpoint-tablet {
+      margin-bottom: 20px;
+      font-size: 1.4em;
+    }
+  }
+
+  &__form {
+    @include flex-column;
+    gap: 15px;
+
+    &-input {
+      padding: 20px;
+    }
+
+    &-textarea {
+      height: 150px;
+    }
+
+    &-button {
+      padding: 20px;
+      width: 100% !important;
+
+      @include breakpoint-500 {
+        font-size: 0.9em;
+      }
+    }
+
+    &-privacy {
+      display: flex;
+      align-items: start;
+      gap: 7px;
+      margin: 15px 0;
+
+      @include breakpoint-500 {
+        margin: 10px 0;
+        font-size: 0.8em;
+      }
+    }
+
+    &-checkbox {
+      transform: translateY(2px);
+    }
+
+    &-text {
+      font-size: 0.8em;
+      line-height: 1.3;
+
+      & a {
+        color: var(--science-blue-600);
+      }
+    } 
+  }
+}

@@ -1,6 +1,7 @@
 @import 'button';
 @import 'text';
 @import 'burger';
+@import 'form';
 
 ::-webkit-scrollbar {
   width: 4px;
@@ -125,4 +126,8 @@ $breakpoints: (
       stroke: var(--science-blue-800);
     }
   }
+}
+
+.body-no-scroll {
+  overflow: hidden;
 }
