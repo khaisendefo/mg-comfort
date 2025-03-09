@@ -1,0 +1,15 @@
+@import 'mixins/mixins';
+@import 'base/base';
+@import 'global/global';
+
+@import 'components/header';
+@import 'components/layout/mobile-menu';
+@import 'components/services/promyvka_radiatora_otopleniya/hero';
+@import 'components/services/promyvka_radiatora_otopleniya/why-needed';
+@import 'components/services/promyvka_radiatora_otopleniya/what-includes';
+@import 'components/layout/consultation';
+@import 'components/home/reviews';
+@import 'components/services/promyvka_radiatora_otopleniya/faq';
+@import 'components/contact';
+@import 'components/footer';
+@import 'components/modal';

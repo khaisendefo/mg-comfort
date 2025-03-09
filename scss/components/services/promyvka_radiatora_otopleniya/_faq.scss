@@ -1,0 +1,73 @@
+.faq {
+  &__container {
+    @include flex-between;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__accordion {
+    @include flex-column;
+    margin-bottom: 30px;
+    max-width: 650px;
+
+    &-item {
+      border-bottom: 1px solid var(--science-blue-950);
+    }
+    
+    &-top {
+      @include flex-all-between;
+      padding: 20px 0;
+    }
+
+    &-body {
+      overflow: hidden;
+      padding: 0;
+      max-height: 0;
+      transition: max-height var(--accordion-transtion);
+
+      &.active {
+        max-height: auto;
+      }
+
+      & ul {
+        @include flex-column;
+        gap: 10px;
+        margin: 15px 0;
+      }
+
+      & li {
+        @include flex-align-center;
+        gap: 8px;
+
+        &::before {
+          content: '';
+          display: inline-block;
+          border-radius: 50%;
+          min-width: 8px;
+          min-height: 8px;
+          background-color: var(--science-blue-950);
+        }
+      }
+    }
+
+    &-description {
+      padding-bottom: 20px;
+
+      &-strong {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__image {
+    max-width: 450px;
+
+    & img {
+      opacity: 0.8;
+      width: 100%;
+      transform: rotate(10deg);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.why-needed {
+  &__container {
+    @include flex-between;
+    gap: 20px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 15px;
+
+    &-item {
+      @include flex-align-center;
+      gap: 8px;
+      &::before {
+        content: '';
+        display: inline-block;
+        border-radius: 50%;
+        min-width: 8px;
+        min-height: 8px;
+        background-color: var(--science-blue-950);
+      }
+    }
+  }
+
+  &__image {
+    max-width: 550px;
+
+    & img {
+      border-radius: 10px;
+      box-shadow: 0 1px 8px 0 rgba(0,0,0,.1);
+      width: 100%;
+    }
+  }
+}

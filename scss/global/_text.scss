@@ -1,4 +1,12 @@
 .text {
+
+  &-description {
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 1.3;
+    font-family: var(--primary-font);
+  }
+
   &-regular {
     font-weight: 400;
     font-size: 1.1em;
@@ -69,14 +77,14 @@
   }
 
   &-section {
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: 700;
     line-height: 1.4;
     text-transform: uppercase;
     color: var(--science-blue-950);
 
     @include breakpoint-1200 {
-      font-size: 2.3em;
+      font-size: 2.1em;
     }
 
     @include breakpoint-1000 {
