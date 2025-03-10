@@ -239,3 +239,10 @@ const sendFormTelegram = () => {
   });
 };
 sendFormTelegram();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.querySelector(".fixed__button");
+  button.addEventListener("click", () => {
+    button.classList.toggle("open");
+  });
+});
